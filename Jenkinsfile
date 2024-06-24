@@ -15,7 +15,10 @@ node () {
         echo 'Terraform Plan'
     }
     stage ('Terraform Apply') {
-        echo ''
+        echo 'Terraform Apply'
+    }
+    stage ('Terraform Apply') {
+        echo 'Upload State to S3'
     }
 }
 
