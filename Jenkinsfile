@@ -2,8 +2,20 @@ node () {
     stage ('checkout') {
         echo get_current_time_date()
     }
-    stage ('install terraform') {
-        echo 'install terraform'
+    stage ('Install Terraform') {
+        echo 'Install Terraform'
+    }
+    stage ('Terraform Init') {
+        echo 'Terraform Init'
+    }
+    stage ('Terraform Validate') {
+        echo 'Terraform Validate'
+    }
+    stage ('Terraform Plan') {
+        echo 'Terraform Plan'
+    }
+    stage ('Terraform Apply') {
+        echo ''
     }
 }
 
