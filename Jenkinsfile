@@ -8,6 +8,9 @@ node () {
     stage ('Terraform Init') {
         echo 'Terraform Init'
     }
+    stage ('Checkov Scan') {
+        echo 'Checkov Scan'
+    }
     stage ('Terraform Validate') {
         echo 'Terraform Validate'
     }
