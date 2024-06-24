@@ -1,5 +1,5 @@
 node () {
-    stage ('checkout') {
+    stage ('Checkout') {
         echo get_current_time_date()
     }
     stage ('Install Terraform') {
