@@ -20,6 +20,9 @@ node () {
     stage ('Terraform Apply') {
         echo 'Upload State to S3'
     }
+    stage ('Upload State to S3') {
+        echo 'Upload State to S3'
+    }
 }
 
 def get_current_time_date() {
