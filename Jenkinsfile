@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checkout'
-                // git branch: 'main', url: 'https://github.com/prashant27/aws-infra-network.git'
+                echo 'Checkout start'
+                git branch: env.BRANCH_NAME, url: 'https://github.com/prashant27/aws-infra-network.git'
+                echo 'Checkout finish'
             }
         }
     }
