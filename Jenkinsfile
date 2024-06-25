@@ -1,33 +1,10 @@
-node () {
-    stage ('Checkout') {
-        echo get_current_time_date()
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
-    stage ('Install Terraform') {
-        echo 'Install Terraform'
-    }
-    stage ('Terraform Init') {
-        echo 'Terraform Init'
-    }
-    stage ('Checkov Scan') {
-        echo 'Checkov Scan'
-    }
-    stage ('Terraform Validate') {
-        echo 'Terraform Validate'
-    }
-    stage ('Terraform Plan') {
-        echo 'Terraform Plan'
-    }
-    stage ('Terraform Apply') {
-        echo 'Terraform Apply'
-    }
-    stage ('Terraform Apply') {
-        echo 'Upload State to S3'
-    }
-    stage ('Upload State to S3') {
-        echo 'Upload State to S3'
-    }
-}
-
-def get_current_time_date() {
-    return 'hoge'
 }
