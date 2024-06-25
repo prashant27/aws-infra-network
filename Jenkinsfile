@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('Checkout') {
             steps {
-                echo 'Hello World'
+                echo 'Checkout'
+                // git branch: 'main', url: 'https://github.com/prashant27/aws-infra-network.git'
             }
         }
     }
